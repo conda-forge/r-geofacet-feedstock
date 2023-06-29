@@ -1,11 +1,11 @@
-About r-geofacet
-================
+About r-geofacet-feedstock
+==========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-geofacet-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/hafen/geofacet
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-geofacet-feedstock/blob/main/LICENSE.txt)
 
 Summary: Provides geofaceting functionality for 'ggplot2'. Geofaceting arranges a sequence of plots of data for different geographical entities into a grid that preserves some of the geographical orientation.
 
