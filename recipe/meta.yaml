@@ -1,4 +1,4 @@
-{% set version = "0.2.1" %}
+{% set version = "0.2.4" %}
 
 {% set posix = 'm2-' if win else '' %}
 
@@ -10,10 +10,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/geofacet_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/geofacet/geofacet_{{ version }}.tar.gz
-  sha256: f2d7b18eb19605cbe7c9726715666073aea35fa58fd2faaa1eae1de8540042ae
+  sha256: 0ec05990ad2a35963008e37f6b32eebed200748ac0c1986afa5f786ba75ff1eb
 
 build:
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
