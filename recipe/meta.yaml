@@ -1,5 +1,4 @@
 {% set version = "0.2.4" %}
-
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -22,7 +21,7 @@ build:
 requirements:
   build:
     - {{ posix }}zip               # [win]
-
+    - cross-r-base {{ r_base }}    # [build_platform != target_platform]
   host:
     - r-base
     - r-geogrid
@@ -30,11 +29,10 @@ requirements:
     - r-ggrepel
     - r-gridextra
     - r-gtable
-    - r-imgur
+    - r-httr2
+    - r-rlang
     - r-rnaturalearth
-    - r-sf
     - r-sp
-
   run:
     - r-base
     - r-geogrid
@@ -42,9 +40,9 @@ requirements:
     - r-ggrepel
     - r-gridextra
     - r-gtable
-    - r-imgur
+    - r-httr2
+    - r-rlang
     - r-rnaturalearth
-    - r-sf
     - r-sp
 
 test:
@@ -71,7 +69,6 @@ extra:
     - oblute
 
 # The original CRAN metadata for this package was:
-
 # Package: geofacet
 # Title: 'ggplot2' Faceting Utilities for Geographical Data
 # Version: 0.2.0
@@ -93,7 +90,6 @@ extra:
 # Maintainer: Ryan Hafen <rhafen@gmail.com>
 # Repository: CRAN
 # Date/Publication: 2020-05-26 11:00:15 UTC
-
 # See
 # https://docs.conda.io/projects/conda-build for
 # more information about meta.yaml
